@@ -14,7 +14,8 @@
         "angio",
         "T2star",
         "FLASH",
-        "PD"
+        "PD",
+        "DIR"
       ],
       "@@@_anat_ext_@@@": ["nii\\.gz", "nii", "json"]
     }

@@ -1,0 +1,25 @@
+Bootstrap: docker
+From: node:18-alpine
+Stage: build
+
+%files
+. /src
+
+
+%post
+npm install -g npm
+
+cd /src
+
+npm install
+npm -w bids-validator run build
+npm -w bids-validator pack
+
+npm install -g /src/bids-validator-*.tgz
+
+%runscript
+cd /src
+exec /usr/local/bin/bids-validator "$@"
+%startscript
+cd /src
+exec /usr/local/bin/bids-validator "$@"

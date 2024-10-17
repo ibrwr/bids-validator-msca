@@ -4,7 +4,8 @@
 [![Codecov](https://codecov.io/gh/bids-standard/bids-validator/branch/master/graph/badge.svg)](https://codecov.io/gh/bids-standard/bids-validator)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3688707.svg)](https://doi.org/10.5281/zenodo.3688707)
 
-# BIDS-Validator
+# BIDS-Validator MSCA
+This is a fork of the bids-validator with some small changes for validating MSCA datasets
 
 - [BIDS-Validator](#bids-validator)
   - [Quickstart](#quickstart)
